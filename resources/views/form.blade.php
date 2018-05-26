@@ -5,7 +5,7 @@
 	<div class="col-sm-offset-3 col-sm-6">
 		<div class="panel panel-info">
 			<div class="panel-heading">Enregistrez-vous</div>
-				<div class="panel-body"> 
+				<div class="panel-body">
 				    {!! Form::open(['url' => 'registration', 'files' => true, 'route' => 'storeUser']) !!}
 				  	 	<div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
 	        				{!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}

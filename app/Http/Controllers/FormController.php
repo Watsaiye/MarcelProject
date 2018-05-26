@@ -16,7 +16,11 @@ class FormController extends Controller
      	public function postForm(UserRequest $request)
      	{
      		$user = new User;
-     		$user->user = $request->input('user');
+     		$user->nom = $request->input('nom');
+     		$user->prenom = $request->input('prenom');
+     		$user->codepostal = $request->input('codepostal');
+     		$user->ville = $request->input('ville');
+     		$user->email = $request->input('email');
      		$user->save();
      		return view('form');
      	}
