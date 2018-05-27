@@ -78,6 +78,7 @@ class ComposerStaticInit4ee9ec0eac6a401045d3d8f1c84f46c3
         ),
         'L' => 
         array (
+            'Lloricode\\LaravelHtmlTable\\' => 27,
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
         ),
@@ -228,6 +229,10 @@ class ComposerStaticInit4ee9ec0eac6a401045d3d8f1c84f46c3
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Lloricode\\LaravelHtmlTable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lloricode/laravel-html-table/src',
+        ),
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
@@ -333,14 +338,14 @@ class ComposerStaticInit4ee9ec0eac6a401045d3d8f1c84f46c3
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\RegistrationController' => __DIR__ . '/../..' . '/app/Http/Controllers/RegistrationController.php',
+        'App\\Http\\Controllers\\FormController' => __DIR__ . '/../..' . '/app/Http/Controllers/FormController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\FormRequest' => __DIR__ . '/../..' . '/app/Http/Requests/FormRequest.php',
+        'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -1813,6 +1818,10 @@ class ComposerStaticInit4ee9ec0eac6a401045d3d8f1c84f46c3
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'Lloricode\\LaravelHtmlTable\\Facades\\LaravelHtmlTableFacade' => __DIR__ . '/..' . '/lloricode/laravel-html-table/src/Facades/LaravelHtmlTableFacade.php',
+        'Lloricode\\LaravelHtmlTable\\Generator' => __DIR__ . '/..' . '/lloricode/laravel-html-table/src/Generator.php',
+        'Lloricode\\LaravelHtmlTable\\LaravelHtmlTableGenerator' => __DIR__ . '/..' . '/lloricode/laravel-html-table/src/LaravelHtmlTableGenerator.php',
+        'Lloricode\\LaravelHtmlTable\\Providers\\LaravelHtmlTableProvider' => __DIR__ . '/..' . '/lloricode/laravel-html-table/src/Providers/LaravelHtmlTableProvider.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',

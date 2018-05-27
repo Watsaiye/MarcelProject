@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
 use App\User;
+use DB;
 
 class FormController extends Controller
 {
    
      	public function getForm()
      	{
-     		return view('form');
+               $users = DB::table('users')->paginate(10);
+               return view('form', ['users' => $users]);
      	}
      	public function postForm(UserRequest $request)
      	{
@@ -21,7 +23,10 @@ class FormController extends Controller
      		$user->codepostal = $request->input('codepostal');
      		$user->ville = $request->input('ville');
      		$user->email = $request->input('email');
+     		$request->file('photo')->move('resources\photos');
      		$user->save();
-     		return view('form');
+               $users = DB::table('users')->paginate(10);
+     		return view('form', ['users' => $users]);
      	}
+
 }

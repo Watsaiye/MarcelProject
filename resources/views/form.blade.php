@@ -2,7 +2,7 @@
 
 @section('content')
     <br>
-	<div class="col-sm-offset-3 col-sm-6">
+	<div class="col-sm-offset-3 col-sm-6	">
 		<div class="panel panel-info">
 			<div class="panel-heading">Enregistrez-vous</div>
 				<div class="panel-body">
@@ -30,9 +30,34 @@
 	        				{!! Form::label('image', 'Ajoutez une photo') !!}
 	        			<div class="form-group {!! $errors->has('photo') ? 'has-error' : '' !!}">	
 	        				{!! Form::file('photo', ['class' => 'form-control'])	 !!}
-	        				{!! $errors->first('photo', '<small class="help-block">:message</small>') !!}
+	        				{!! $errors->first('photo', '<small class="help-éblock">:message</small>') !!}
 						</div>
 	        				{!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
 	    			{!! Form::close() !!}
+	    			</div>
+	    		</div>
+					<table class="table table-hover my-4">
+					  <thead>
+					    <tr>
+					      <th scope="col">Prénom</th>
+					      <th scope="col">Nom</th>
+					      <th scope="col">Code Postal</th>
+					      <th scope="col">Ville</th>
+					      <th scope="col">E-mail</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	@foreach($users as $user)
+					  	<tr>
+					  		<td>{{ $user->prenom }}</td>
+					  		<td>{{ $user->nom }}</td>
+					  		<td>{{ $user->codepostal }}</td>
+					  		<td>{{ $user->ville }}</td>
+					  		<td>{{ $user->email }}</td>					  		
+					  	</tr>
+					  	@endforeach
+					  </tbody>
+					</table>
+					  	{{ $users->links() }}
 @endsection
 
