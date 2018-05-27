@@ -29,14 +29,20 @@
 						</div>
 	        				{!! Form::label('image', 'Ajoutez une photo') !!}
 	        			<div class="form-group {!! $errors->has('photo') ? 'has-error' : '' !!}">	
-	        				{!! Form::file('photo', ['class' => 'form-control'])	 !!}
+	        				{!! Form::file('photo', null, ['class' => 'form-control'])	 !!}
 	        				{!! $errors->first('photo', '<small class="help-éblock">:message</small>') !!}
 						</div>
 	        				{!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
 	    			{!! Form::close() !!}
 	    			</div>
 	    		</div>
-					<table class="table table-hover my-4">
+	    			<script type="text/javascript">$(document).ready( function () {
+    				$('#myTable').DataTable({
+    					paging: false
+    				});
+					} );
+					</script>
+					<table class="table table-hover my-4" id="myTable">
 					  <thead>
 					    <tr>
 					      <th scope="col">Prénom</th>

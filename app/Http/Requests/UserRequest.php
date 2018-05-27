@@ -26,7 +26,7 @@ class UserRequest extends FormRequest
         return [
             'nom' => 'required',
             'prenom' => 'required',
-            'codepostal' => 'required|numeric',
+            'codepostal' => 'required|digits:5',
             'email' => 'required|email|unique:users',
             'ville' => 'required',
             'photo' => 'required|image|max:500',
