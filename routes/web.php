@@ -11,9 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/registration', 'FormController@getForm');
-Route::post('/registration', ['uses' => 'FormController@postForm', 'as' => 'storeUser']);
+Route::get('/', 'FormController@getForm');
+Route::post('/', ['uses' => 'FormController@postForm', 'as' => 'storeUser']);
